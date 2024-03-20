@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="svgImg/favicon.svg" />
+
+    <title>Music Player</title>
+
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="left_container">
+        <div class="home_box">
+          <div class="logo_img">
+            <span class="logo">Beat-Box</span>
+            <img class="close_btn" src="svgImg/close.svg" alt="close" />
+          </div>
+          <div class="items">
+            <ul class="items_list">
+              <li class="home_item">
+                <img src="svgImg/home.svg" alt="home" class="home_img" /> Home
+              </li>
+              <li class="search_item">
+                <img src="svgImg/search.svg" alt="search" class="search_img" />
+                Search
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="library_box">
+          <div class="heading">
+            <img
+              src="svgImg/playlist.svg"
+              alt="playlist"
+              class="playlist_img"
+            />
+            <span>Your Library</span>
+          </div>
+          <div class="songsDisplay">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <ul>
+              <li>Legal</li>
+              <li>Safety & Pricacy Center</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+              <li>About Ads</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_container">
+        <!-- navbar -->
+        <div class="nav">
+          <div class="humburger">
+            <img src="svgImg/humberger.svg" alt="humberger" />
+          </div>
+          <div class="sign_logo">
+            <span class="lt">&lt;</span>
+            <span class="gt">&gt;</span>
+          </div>
+          <div class="buttons">
+            <button class="singup_btn">sign up</button>
+            <button class="login_btn">Log in</button>
+          </div>
+        </div>
+
+        <!-- playlist -->
+        <div class="spotify_playlist">
+          <div class="heading_section">
+            <h2>Beat-Box Playlists</h2>
+          </div>
+
+          <div class="cards"></div>
+
+          <!-- play song -->
+          <div class="play_song">
+            <div class="actionBar">
+              <div class="song_info"></div>
+              <div class="song_buttons">
+                <img id="prev" src="svgImg/prevSong.svg" alt="prev" />
+                <img id="play" src="svgImg/play.svg" alt="play" />
+                <img id="next" src="svgImg/nextSong.svg" alt="next" />
+              </div>
+              <div class="song_time"></div>
+            </div>
+            <div class="seekbar">
+              <div class="progress"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/items.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
